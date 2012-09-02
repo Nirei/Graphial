@@ -22,8 +22,8 @@ public class TwitterCache {
 	public static final File followerFile = new File("follower_cache.dat");
 
 	private static HashMap<Integer, String> nameCache = null;
-	private static HashMap<String, Integer> idCache = new HashMap<String, Integer>();
-	private static HashMap<Integer, Vector<Integer>> followerCache = new HashMap<Integer, Vector<Integer>>();
+	private static HashMap<String, Integer> idCache = null;
+	private static HashMap<Integer, Vector<Integer>> followerCache = null;
 
 	@SuppressWarnings("unchecked")
 	public static void loadCache() {

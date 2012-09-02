@@ -21,3 +21,8 @@ Since the caches are still very rudimentary, you will have to delete them manual
 License
 =======
 Meh, this is totally copyleft. Mess around with it as much as you desire, don't even bother to credit me for this shit.
+
+Credit
+======
+This project includes a full unmodified copy of the one at https://github.com/douglascrockford/JSON-java
+My respects to Mr. Crokford.

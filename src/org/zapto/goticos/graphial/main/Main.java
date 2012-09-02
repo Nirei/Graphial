@@ -48,7 +48,7 @@ public class Main {
 				Vector<Integer> followers2 = TwitterCache.queryFollowers(i);
 				if (followers2.contains(user)) {
 					users.put(i, followers2);
-				} // Filter out followers that don't follow you.
+				} // Filter out followers that you don't follow.
 			}
 
 			HashSet<String> relations = new HashSet<String>();
@@ -83,7 +83,7 @@ public class Main {
 
 			// Build the file
 			StringBuilder sb = new StringBuilder();
-			sb.append("graph following {\n");
+			sb.append("graph " + TwitterCache.queryUsername(user) + " {\n" + "node[fontcolor=blue, fontsize=8, fontname=Helvetica];\n");
 			for (String s : relations) {
 				sb.append(s);
 			}
